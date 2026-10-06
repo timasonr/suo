@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Структура сайта — архитектурное бюро</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="sheet">
+    <header class="doc">
+      <p class="doc__kind">Структура сайта</p>
+      <h1>Главная страница</h1>
+      <p class="doc__note">Состав блоков для согласования. Здесь нет оформления, фотографий и рабочих кнопок.</p>
+    </header>
+
+    <ol class="blocks">
+      <li class="block" id="header">
+        <div class="block__meta">
+          <span class="num">01</span>
+          <h2>Шапка</h2>
+          <p>Фиксируется при прокрутке. На узком экране меню складывается в одну кнопку.</p>
+        </div>
+        <div class="frame">
+          <div class="row">
+            <div class="slot slot--logo">Логотип: Светлана | Архитектурное бюро</div>
+            <ul class="menu">
+              <li>Проекты</li>
+              <li>Услуги</li>
+              <li>О бюро</li>
+              <li>Контакты</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+
+      <li class="block" id="hero">
+        <div class="block__meta">
+          <span class="num">02</span>
+          <h2>Главный экран</h2>
+          <p>На весь первый экран. Слайдер из рендеров и чертежей, текст поверх.</p>
+        </div>
+        <div class="frame frame--hero">
+          <div class="slot slot--media">Поле слайда: 3D-рендер или чертёж фасада</div>
+          <div class="stack">
+            <div class="slot slot--line">Надзаголовок</div>
+            <div class="slot slot--title">Заголовок H1</div>
+            <div class="slot slot--text">Короткий абзац</div>
+            <div class="slot slot--tiny">Номер слайда, например 01 / 03</div>
+          </div>
+        </div>
+      </li>
+
+      <li class="block" id="services">
+        <div class="block__meta">
+          <span class="num">03</span>
+          <h2>Направления работы</h2>
+          <p>Три колонки. На планшете две, на телефоне одна.</p>
+        </div>
+        <div class="frame">
+          <div class="slot slot--line">Заголовок секции</div>
+          <div class="cols cols--3">
+            <article class="slot slot--card">
+              <strong>01</strong>
+              <span>Таунхаусы и малоэтажные комплексы</span>
+              <span>Короткое описание</span>
+            </article>
+            <article class="slot slot--card">
+              <strong>02</strong>
+              <span>Коммерция и рекреация</span>
+              <span>Короткое описание</span>
+            </article>
+            <article class="slot slot--card">
+              <strong>03</strong>
+              <span>Реконструкция и исторический фонд</span>
+              <span>Короткое описание</span>
+            </article>
+          </div>
+        </div>
+      </li>
+
+      <li class="block" id="projects">
+        <div class="block__meta">
+          <span class="num">04</span>
+          <h2>Портфолио</h2>
+          <p>Фильтр сверху и сетка карточек. На этом листе фильтр только обозначен, он не переключает карточки.</p>
+        </div>
+        <div class="frame">
+          <div class="slot slot--line">Заголовок секции</div>
+          <ul class="menu menu--filter">
+            <li>Все</li>
+            <li>3D-модели и концепции</li>
+            <li>Чертежи и экспликации</li>
+            <li>Реализованные объекты</li>
+          </ul>
+          <div class="cols cols--3">
+            <article class="slot slot--card">
+              <span class="media">Изображение 16:10</span>
+              <span>Метка: концепция / чертёж / реализация</span>
+              <span>Название объекта</span>
+              <span>Площадь, стадия, год</span>
+            </article>
+            <article class="slot slot--card">
+              <span class="media">Изображение 16:10</span>
+              <span>Метка</span>
+              <span>Название объекта</span>
+              <span>Площадь, стадия, год</span>
+            </article>
+            <article class="slot slot--card">
+              <span class="media">Изображение 16:10</span>
+              <span>Метка</span>
+              <span>Название объекта</span>
+              <span>Площадь, стадия, год</span>
+            </article>
+          </div>
+        </div>
+      </li>
+
+      <li class="block" id="about">
+        <div class="block__meta">
+          <span class="num">05</span>
+          <h2>О проектировщике</h2>
+          <p>Слева изображение, справа текст. На телефоне друг под другом.</p>
+        </div>
+        <div class="frame">
+          <div class="split">
+            <div class="slot slot--media">Фото: портрет или рабочий стол</div>
+            <div class="stack">
+              <div class="slot slot--line">Заголовок секции</div>
+              <div class="slot slot--title">Личное обращение</div>
+              <div class="slot slot--text">Стаж, СРО, работа с девелоперами, экспертизы</div>
+            </div>
+          </div>
+        </div>
+      </li>
+
+      <li class="block" id="contacts">
+        <div class="block__meta">
+          <span class="num">06</span>
+          <h2>Контакты</h2>
+          <p>Без формы заявки. Три прямых действия.</p>
+        </div>
+        <div class="frame">
+          <div class="slot slot--title">Заголовок: обсудить проект</div>
+          <ul class="menu">
+            <li>Telegram</li>
+            <li>WhatsApp</li>
+            <li>Карточка предприятия, PDF</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</body>
+</html>
