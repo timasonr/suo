@@ -164,6 +164,50 @@ h1, h2, p { margin: 0; }
 
 .frame--hero .slot--media { min-height: 220px; }
 
+.mark {
+  margin: 0 0 12px;
+  padding: 10px 12px;
+  border: 1px dashed #8a8a8a;
+  background: #fff;
+  color: #4a4a4a;
+  font-size: 14px;
+}
+
+.steps {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.steps li {
+  display: grid;
+  gap: 8px;
+  align-content: start;
+  padding: 12px;
+  background: #fff;
+  border: 1px solid #b5b5b5;
+  font-size: 14px;
+}
+
+.steps__n {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.steps .media {
+  display: grid;
+  place-items: center;
+  min-height: 88px;
+  margin: auto -12px -12px;
+  padding: 12px;
+  border-top: 1px solid #b5b5b5;
+  background: #eee;
+  text-align: center;
+  color: #3a3a3a;
+}
+
 @media (min-width: 720px) {
   .split { display: grid; grid-template-columns: 0.8fr 1.2fr; }
   .cols--3 { display: grid; grid-template-columns: 1fr 1fr 1fr; }
@@ -172,6 +216,7 @@ h1, h2, p { margin: 0; }
     align-items: end;
   }
   .frame--hero .slot--media { min-height: 280px; }
+  .steps { grid-template-columns: repeat(4, 1fr); }
 }
 
 @media (max-width: 719px) {
